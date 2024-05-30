@@ -25,6 +25,6 @@ var pascalTriangle = pascalTriangleFun(numberOfRow);
 
 for (var k = 0; k <= numberOfRow - 1; k++) {
   const di = document.createElement("div");
-  di.innerHTML = `<h1>${[...pascalTriangle[k]]}</h1>`;
+  di.innerHTML = `<li>${[...pascalTriangle[k]]}</li>`;
   document.getElementById("pascal").appendChild(di);
 }
